@@ -89,11 +89,11 @@ $( document ).ready(function() {
     
         $("#items-row").append(myItemDiv);
 
-        if (x % 4 === 0) {
-            var newRowDiv = $("<div>");
-            newRowDiv.addClass("row");
-            $("#items-row").append(newRowDiv);
-        };
+        // if (x % 4 === 0) {
+        //     var newRowDiv = $("<div>");
+        //     newRowDiv.addClass("row");
+        //     $("#items-row").append(newRowDiv);
+        // };
         
     }; 
 });
