@@ -81,7 +81,7 @@ $( document ).ready(function() {
 
 
         myFrontDiv.html('<img class="img-fluid" alt="" src="'+items[x]+'" ></img>');
-        myBackDiv.html('<h2>Title Here</h2><br><p>Description Here</p>');
+        myBackDiv.html('<br><h2>Title Here</h2><br><p>Description Here</p>');
 
         myItemDiv.append(myInnerDiv);
         myInnerDiv.append(myFrontDiv);
