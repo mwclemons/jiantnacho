@@ -51,7 +51,7 @@ li {
   
   /* Style the front side (fallback if image is missing) */
   .flip-box-front {
-    background-color: #bbb;
+    background-color: white;
     color: black;
   }
   
