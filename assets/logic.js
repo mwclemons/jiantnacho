@@ -53,11 +53,39 @@ var items = [
 ];
 
 
+
+    // <div class="flip-box">
+    // <div class="flip-box-inner">
+    //     <div class="flip-box-front">
+    //     <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    //     </div>
+    //     <div class="flip-box-back">
+    //     <h2>Paris</h2>
+    //     <p>What an amazing city</p>
+    //     </div>
+    // </div>
+    // </div>
+
 $( document ).ready(function() {
     for (var x = 0; x < items.length; x++) {
         var myItemDiv = $("<div>");
-        myItemDiv.addClass("col-6 col-lg-3 text-center");
-        myItemDiv.html('<img class="img-fluid" alt="" src="'+items[x]+'" ></img>');
+        var myInnerDiv = $("<div>");
+        var myFrontDiv = $("<div>");
+        var myBackDiv = $("<div>");
+
+        myItemDiv.addClass("col-6 col-lg-3 text-center flip-box");
+        myInnerDiv.addClass("flip-box-inner");
+        myFrontDiv.addClass("flip-box-front");
+        myBackDiv.addClass("flip-box-back");
+        
+
+
+        myFrontDiv.html('<img class="img-fluid" alt="" src="'+items[x]+'" ></img>');
+        myBackDiv.html('<h2>Title Here</h2><br><p>Description Here</p>');
+
+        myItemDiv.append(myInnerDiv);
+        myInnerDiv.append(myFrontDiv);
+        myInnerDiv.append(myBackDiv);
     
         $("#items-row").append(myItemDiv);
 
