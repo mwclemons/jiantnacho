@@ -56,12 +56,11 @@ var items = [
 $( document ).ready(function() {
     for (var x = 0; x < items.length; x++) {
         var myItemDiv = $("<div>");
-        myItemDiv.addClass("col-6 col-lg-3");
+        myItemDiv.addClass("col-6 col-lg-3 text-center");
         myItemDiv.html('<img class="img-fluid" alt="" src="'+items[x]+'" ></img>');
     
         $("#items-row").append(myItemDiv);
-        console.log (x)
-        console.log (x % 4 === 0)
+
         if (x % 4 === 0) {
             var newRowDiv = $("<div>");
             newRowDiv.addClass("row");
