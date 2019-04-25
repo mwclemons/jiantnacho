@@ -9,6 +9,10 @@ li {
     white-space:nowrap;
 }
 
+#items-row {
+  position: absolute;
+  top:10%;
+}
 .navbar-light {
     background-color:transparent !important;
     border-color:transparent;
@@ -64,3 +68,11 @@ li {
     color: black;
     transform: rotateY(180deg);
   }
+
+  @media only screen and (max-width: 768px) {
+    .navbar-brand {
+      position: relative;
+      left: 10%;
+    }
+
+  } 
